@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  font-size: 20px;
+  font-family: serif;
+  font-style: italic;
+  background: lightyellow;
+  color: black;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.4;
+}
+
+#page {
+  margin: 30px auto;
+  border-style: solid;
+  padding: 1em 2em;
+  border-color: #edbd4e;
+  border-width: 1em;
+  max-width: 800px;
+  display: block;
+}
+
+#list {
+  margin: 0 80px;
+}
+
+#first-line {
+  font-size: 28px;
+  margin: 0;
+  font-family: "Brush Script MT", serif;
+}
+
+#date {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Brush Script MT", serif;
+}

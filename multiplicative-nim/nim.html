@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Play Multiplicative Nim!</title>
+    <link href="nim-style.css" rel="stylesheet" type="text/css" />
+    <script src="nim-script.js"></script>
+  </head>
+
+  <body>
+    <h1>Multiplicative Nim</h1>
+    <div id="grid">
+      <div id="play-space-wrapper">
+        <h2>Play!</h2>
+        <input
+          type="button"
+          value="Start"
+          onclick="start()"
+          id="starter"
+          class="button"
+        />
+        <div id="play-space">
+          <div id="end-message"></div>
+          <div>
+            <span id="target-display">Target: 1000</span>
+            <br />
+            Current product:
+            <span id="product-display">1</span>
+            <br />
+            Previous entries:
+            <span id="entry-list"></span>
+            <br />
+          </div>
+          <div>
+            <input
+              type="number"
+              name="entry"
+              placeholder="Enter a number."
+              id="entry-box"
+              class="number-input"
+            />
+            <input
+              type="button"
+              value="Submit"
+              onclick="handleEntry()"
+              id="submitter"
+              class="button"
+            />
+          </div>
+          <div id="error-text"></div>
+          <div>
+            <input
+              type="button"
+              value="Start Over"
+              onclick="reset()"
+              id="resetter"
+              class="button"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="parameters-wrapper">
+        <h2>Parameters</h2>
+        <div id="parameter-mode-settings">
+          <span id="parameter-mode-message">Playing Classic Mode</span>
+          <input
+            type="button"
+            value="Set Custom Parameters"
+            onclick="switchParameterSetup()"
+            id="parameter-mode-switcher"
+            class="button"
+          />
+          <br />
+          <span id="parameter-mode-notes"
+            >Switching to custom parameters will reset the game.</span
+          >
+        </div>
+
+        <div id="parameters">
+          <span class="parameter-headers"
+            >Maximum entry (must be at least 3):</span
+          >
+          <input
+            type="number"
+            value="9"
+            min="3"
+            id="max-entry"
+            class="number-input"
+          />
+          <input
+            type="button"
+            value="Random"
+            onclick="randomizeMax()"
+            id="random-max"
+            class="button"
+          />
+          <br />
+
+          <span class="parameter-headers"
+            >Target value (must be at least 10):</span
+          >
+          <input
+            type="number"
+            value="1000"
+            min="10"
+            id="target"
+            class="number-input"
+          />
+          <input
+            type="button"
+            value="Random"
+            onclick="randomizeTarget()"
+            id="random-target"
+            class="button"
+          />
+          <br />
+
+          <span class="parameter-headers">Win Condition:</span>
+          <span id="win-type-message"
+            >Regular -- You win if you exceed the target value.</span
+          >
+          <input
+            type="button"
+            value="Switch to Misere"
+            onclick="switchWinType()"
+            id="win-type-switcher"
+            class="button"
+          />
+          <br />
+
+          <span class="parameter-headers">Mode:</span>
+          <span id="computer-mode-message"
+            >Easy -- The computer chooses values randomly.</span
+          >
+          <input
+            type="button"
+            value="Switch to Hard Mode"
+            onclick="switchComputerMode()"
+            id="computer-mode-switcher"
+            class="button"
+          />
+          <br />
+
+          <input
+            type="button"
+            value="Apply Changes"
+            onclick="reset()"
+            id="parameter-applier"
+            class="button"
+          />
+        </div>
+      </div>
+
+      <div id="instructions-wrapper">
+        <h2>How To Play</h2>
+        <p>
+          Enter a number (integer greater than 1) every turn in the box below.
+          The product starts at 1 and gets multiplied by your entry and the
+          computer's entry every turn. You win if the product first exceeds the
+          target value following your entry.<br />
+          Click Start to begin playing. By default, entries cannot be greater
+          than 9, and the computer chooses randomly. Click Set Custom Parameters
+          to change the maximum entry, the target value, how the computer
+          chooses its entries, and whether you win or lose by reaching the
+          target.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

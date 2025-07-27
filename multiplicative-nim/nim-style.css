@@ -1,0 +1,125 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0.5em;
+  font-size: 18px;
+  font-family: Calibri, sans-serif;
+  background: bisque;
+  color: black;
+  text-align: center;
+}
+
+h2 {
+	margin: 5px 0px;
+  color: navy;
+}
+
+h1 {
+	margin: 10px 0px;
+  color: darkred;
+}
+
+div {
+	margin-bottom: 5px;
+}
+
+p {
+	margin: 5px 0px;
+}
+
+#error-text {
+	color: red;
+}
+
+#end-message {
+	display: none;
+  margin-bottom: 0px;
+}
+
+#product-display {
+	font-weight: bold;
+}
+
+#target-display {
+  font-style: italic;
+}
+
+#play-space {
+	display: none;
+}
+
+#parameters {
+	display: none;
+
+	& span {
+		margin: 2px 0px;
+	}
+	& input {
+		margin: 2px 0px 5px;
+	}
+}
+
+#parameter-mode-message {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.parameter-headers {
+  font-weight: bold;
+}
+
+#parameter-applier {
+	margin-top: 0.5em;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 250px 375px 1fr;
+  justify-content: center;
+
+  & > * {
+    padding: 5px;
+  }
+}
+
+#play-space-wrapper {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+#parameters-wrapper {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+#instructions-wrapper {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  max-width: 500px;
+  justify-self: center;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  background: skyblue;
+  border-radius: 7px;
+  border: 2px solid skyblue;
+
+  &:hover, &:active {
+    background: blue;
+    border-color: blue;
+  }
+}
+
+.number-input {
+  background: skyblue;
+  border: none;
+  font-size: 16px;
+  font-family: inherit;
+  max-width: 125px;
+}
