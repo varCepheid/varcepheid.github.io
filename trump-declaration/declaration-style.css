@@ -14,14 +14,21 @@ body {
   line-height: 1.4;
 }
 
-#page {
-  margin: 30px auto;
+#document {
+  margin: 15px auto;
   border-style: solid;
   padding: 1em 2em;
   border-color: #edbd4e;
   border-width: 1em;
   max-width: 800px;
   display: block;
+}
+
+#title {
+  margin: 15px 0px;
+  font-size: 36px;
+  font-style: normal;
+  text-decoration: underline;
 }
 
 #list {
