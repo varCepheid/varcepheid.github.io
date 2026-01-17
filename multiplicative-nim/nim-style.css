@@ -1,19 +1,11 @@
 body {
 	margin: 0.5em;
-  font-size: 18px;
   font-family: Calibri, sans-serif;
-  color: black;
-  text-align: center;
 }
 
 h2 {
 	margin: 5px 0px;
   color: navy;
-}
-
-h1 {
-	margin: 10px 0px;
-  color: darkred;
 }
 
 div {
