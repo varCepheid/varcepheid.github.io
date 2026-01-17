@@ -6,7 +6,7 @@ html {
 body {
   background: lightyellow;
   color: black;
-  font-family: serif;
+  font-family: Georgia, serif;
   margin: 1.5em;
   text-align: center;
   font-size: 18px;
@@ -39,13 +39,13 @@ div {
   color: darkred;
 }
 
-#headline {
-  max-width: 700px;
-  margin: auto;
-}
-
 .footer {
   padding-bottom: 1em;
   font-size: 18px;
   font-style: normal;
+}
+
+#headline {
+  max-width: 700px;
+  margin: auto;
 }

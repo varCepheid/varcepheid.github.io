@@ -17,9 +17,10 @@ body {
 }
 
 #title {
-  margin: 15px 0px;
   font-style: normal;
+  font-weight: normal; 
   text-decoration: underline;
+  color: black;
 }
 
 #list {
