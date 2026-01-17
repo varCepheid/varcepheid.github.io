@@ -66,12 +66,16 @@ p {
 #parameters {
 	display: none;
 
-	& p {
-		margin: 5px 30px;
+	& span {
+		margin: 2px 0px;
 	}
 	& input {
 		margin: 2px 0px 5px;
 	}
+}
+
+#parameter-mode-settings p {
+  margin: 5px 30px;
 }
 
 #parameter-mode-message {
