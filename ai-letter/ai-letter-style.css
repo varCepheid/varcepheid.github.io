@@ -1,31 +1,24 @@
-#name-date {
-  text-align: right;
-}
-
-#letter {
-  text-align: left;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto 0;
+h2 {
+  text-align: center;
 }
 
 .italicized {
   font-style: italic;
 }
 
-#signature {
-  font-family: "Brush Script MT", serif;
-}
-
-#sources {
-  padding-left: 0.5in;
-  text-indent: -0.5in;
+#document {
   text-align: left;
   max-width: 800px;
   display: block;
   margin: 0 auto 0;
 }
 
-h2 {
-  text-align: center;
+#name-date {
+  text-align: right;
+}
+
+#signature {
+  font-family: "Brush Script MT", serif;
+  font-size: 22px;
+  margin-left: 2em;
 }
