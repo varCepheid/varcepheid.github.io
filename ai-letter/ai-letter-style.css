@@ -1,0 +1,16 @@
+#name-date {
+  text-align: right;
+}
+
+.italicized {
+  font-style: italic;
+}
+
+#signature {
+  font-family: "Brush Script MT", serif;
+}
+
+#sources {
+  padding-left: 0.5in;
+  text-indent: -0.5in;
+}
